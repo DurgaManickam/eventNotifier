@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/etitletext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/event_title"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edesctext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etitletext"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="@string/event_desc"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/Viewbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Savebtn"
+        android:layout_alignBottom="@+id/Savebtn"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_marginLeft="20dp"
+        android:text="View" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginRight="50dp"
+        android:layout_toLeftOf="@+id/textView1"
+        android:text="@string/cur_date" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView3"
+            android:layout_alignRight="@+id/textView3"
+            android:text="Time" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView4"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_alignLeft="@+id/textView1"
+            android:text="@string/cur_date_view" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/edesctext"
+            android:layout_marginRight="115dp"
+            android:layout_marginTop="60dp"
+            android:text="@string/cur_time_view" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Viewbtn"
+            android:layout_toLeftOf="@+id/Viewbtn"
+            android:text="@string/view_text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Viewbtn"
+            android:layout_alignLeft="@+id/Viewbtn"
+            android:text="@string/view_text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/Savebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button1"
+            android:layout_alignLeft="@+id/textView5"
+            android:layout_marginBottom="28dp"
+            android:text="@string/event_save" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="25dp"
+            android:layout_toLeftOf="@+id/textView4"
+            android:text="@string/start_date"
+            android:visibility="invisible"
+             />
+
+        <EditText
+            android:id="@+id/efromdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView7"
+            android:layout_above="@+id/Savebtn"
+            android:layout_alignRight="@+id/textView1"
+            android:ems="10"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/efromtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView7"
+            android:layout_above="@+id/Viewbtn"
+            android:ems="10"
+            android:inputType="time" />
+
+        <EditText
+            android:id="@+id/etodate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/efromdate"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:inputType="date" 
+            android:visibility="invisible"/>
+
+        <EditText
+            android:id="@+id/etotime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/efromtime"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/efromtime"
+            android:ems="10"
+            android:inputType="time" 
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Savebtn"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="14dp"
+            android:text="@string/event_next" 
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/diabtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/button1"
+            android:text="Notification" />
+  
+</RelativeLayout>
+
